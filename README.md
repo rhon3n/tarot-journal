@@ -12,7 +12,7 @@ A NodeJS Command Line Application that walks through an 8 card Tarot reading.
 
 ## Usage
 
-> Tarot Journal will walk you through an 8 card Tarot reading. Simply follow the instructions to complete your reading. *__Since this app is currently being developed, knowledge of the Tarot is required. [Biddy Tarot](https://www.biddytarot.com/) is a great place to start learning the Tarot if you are new.__*
+> Tarot Journal will walk you through an 8 card Tarot reading based on "The Crow Tarot" by MJ Cullinane. Simply follow the instructions to complete your reading. *__Since this app is currently being developed, knowledge of the Tarot is required. [Biddy Tarot](https://www.biddytarot.com/) is a great place to start learning the Tarot if you are new.__*
 
 ## Requirements
 
@@ -50,16 +50,6 @@ In the project directory, you can run:
 ### `node index.js`
 
 Runs the app in the command line.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### Deployment
 
