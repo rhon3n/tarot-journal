@@ -1,0 +1,8 @@
+# Git will not track these folders/files.
+
+# Folders
+node_modules/
+
+# Files
+.babelrc
+
