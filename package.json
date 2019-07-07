@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A simple app to guide you through journaling tarot readings.",
   "main": "index.js",
+  "bin": {
+    "fix-package-json": "./index.js" 
+  }
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib"

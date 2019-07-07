@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 // TODO add babel to use ES6+ import syntax
 const inquirer = require('inquirer');
 const chalk = require('chalk');
@@ -31,7 +33,7 @@ const questions = [
     name: 'card1',
     message: 'What card did you pull?',
     prefix:
-      "Card #1: HEART ENERGY/INNER SELF \n      -------------------------------\nThis position represents an energy that is serving as a foundation. It may be one that is permanent and represents one's true nature or an energy that has taken hold of the heart due to life events. This card's energy operates in the background and is tied with the present energy.\n      -------------------------------\n",
+      "\nCard #1: HEART ENERGY/INNER SELF \n      -------------------------------\nThis position represents an energy that is serving as a foundation. It may be one that is permanent and represents one's true nature or an energy that has taken hold of the heart due to life events. This card's energy operates in the background and is tied with the present energy.\n      -------------------------------\n",
     pageSize: 4,
     source: searchCards,
   },
@@ -40,7 +42,7 @@ const questions = [
     name: 'card2',
     message: 'What card did you pull?',
     prefix:
-      'Card #2: PRESENT ENERGY \n      -------------------------------\nThis is the surrounding energy that creates the mood and creates the atmosphere for future events to emerge.\n      -------------------------------\n',
+      '\nCard #2: PRESENT ENERGY \n      -------------------------------\nThis is the surrounding energy that creates the mood and creates the atmosphere for future events to emerge.\n      -------------------------------\n',
     pageSize: 4,
     source: searchCards,
   },
@@ -49,7 +51,7 @@ const questions = [
     name: 'card3',
     message: 'What card did you pull?',
     prefix:
-      'Card #3: ENERGY HOLDING YOU BACK OR HELPING YOU \n      -------------------------------\nThis is the energy that may be supporting your goals or adding friction to the situation. Often the card that comes through in this position hints at your hopes and fears.\n      -------------------------------\n',
+      '\nCard #3: ENERGY HOLDING YOU BACK OR HELPING YOU \n      -------------------------------\nThis is the energy that may be supporting your goals or adding friction to the situation. Often the card that comes through in this position hints at your hopes and fears.\n      -------------------------------\n',
     pageSize: 4,
     source: searchCards,
   },
@@ -58,7 +60,7 @@ const questions = [
     name: 'card4',
     message: 'What card did you pull?',
     prefix:
-      'Card #4: HOPES/FEARS \n      -------------------------------\nThis is the energy that lurks in your subconscious and at times can be a saboteur. It is the manifestation of hopes and fears.\n      -------------------------------\n',
+      '\nCard #4: HOPES/FEARS \n      -------------------------------\nThis is the energy that lurks in your subconscious and at times can be a saboteur. It is the manifestation of hopes and fears.\n      -------------------------------\n',
     pageSize: 4,
     source: searchCards,
   },
@@ -67,7 +69,7 @@ const questions = [
     name: 'card5',
     message: 'What card did you pull?',
     prefix:
-      'Card #5: GROUNDING ENERGY/ADVICE \n      -------------------------------\nThis is the energy that keeps you centered and connected to source energy at the present moment. This energy may come through as a positive card or a one that carries a negative energy. A negative card in this position may signal that your grounding energy is counterproductive. This card advises you to resolve any negative habits or limiting beliefs.\n      -------------------------------\n',
+      '\nCard #5: GROUNDING ENERGY/ADVICE \n      -------------------------------\nThis is the energy that keeps you centered and connected to source energy at the present moment. This energy may come through as a positive card or a one that carries a negative energy. A negative card in this position may signal that your grounding energy is counterproductive. This card advises you to resolve any negative habits or limiting beliefs.\n      -------------------------------\n',
     pageSize: 4,
     source: searchCards,
   },
@@ -76,7 +78,7 @@ const questions = [
     name: 'card6',
     message: 'What card did you pull?',
     prefix:
-      'Card #6: LESSON FROM THE PAST \n      -------------------------------\nThis card is a past lesson or experience that serves as a reminder and offers advice for your current situation.\n      -------------------------------\n',
+      '\nCard #6: LESSON FROM THE PAST \n      -------------------------------\nThis card is a past lesson or experience that serves as a reminder and offers advice for your current situation.\n      -------------------------------\n',
     pageSize: 4,
     source: searchCards,
   },
@@ -85,7 +87,7 @@ const questions = [
     name: 'card7',
     message: 'What card did you pull?',
     prefix:
-      'Card #7: EXTERNAL OPENINGS OR OBSTACLES \n      -------------------------------\nThis is the energy that enters your personal atmosphere without your invitation. It may increase or alleviate friction.\n      -------------------------------\n',
+      '\nCard #7: EXTERNAL OPENINGS OR OBSTACLES \n      -------------------------------\nThis is the energy that enters your personal atmosphere without your invitation. It may increase or alleviate friction.\n      -------------------------------\n',
     pageSize: 4,
     source: searchCards,
   },
@@ -94,7 +96,7 @@ const questions = [
     name: 'card8',
     message: 'What card did you pull?',
     prefix:
-      'Card #8: POSSIBLE FUTURE OR OUTCOME \n      -------------------------------\nThis is the energy that will manifest as a result of action.\n      -------------------------------\n',
+      '\nCard #8: POSSIBLE FUTURE OR OUTCOME \n      -------------------------------\nThis is the energy that will manifest as a result of action.\n      -------------------------------\n',
     pageSize: 4,
     source: searchCards,
   },
