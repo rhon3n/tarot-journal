@@ -5,11 +5,23 @@ const inquirer = require('inquirer');
 const chalk = require('chalk');
 const fuzzy = require('fuzzy');
 const deckJSON = require('./tarot.json');
+const clear = require('clear');
 
 const { red, green, cyan } = chalk;
 const { log } = console;
 const { cards } = deckJSON;
 const deck = cards.map(({ name }) => name);
+const ui = new inquirer.ui.BottomBar();
+
+const startup = () => {
+  log(cyan('Welcome to the Tarot Journal. We will walk you through an 8 card Tarot reading.'));
+  log('----------------------------------------------');
+  log(
+    'Focus on whatever you feel you should ask as you shuffle the deck however you please. Whenever you feel ready, pull the first card and place it directly in front of you face down. Place the second card directly to the left of the first card. Place the third card to the right of the first card. Place the fourth card directly above the first card. Place the fifth card directly below the first card. Place the sixth card to the left of the second card. Place the seventh card directly to the right of the third card. Finally, place the eighth card angled between the third and fourth cards. Flip each card over one by one and progress through this program noting the way each card makes you feel.'
+  );
+  log('----------------------------------------------');
+  promptHandler();
+}
 
 inquirer.registerPrompt('cardSelect', require('inquirer-autocomplete-prompt'));
 
@@ -102,13 +114,16 @@ const questions = [
   },
 ];
 
-inquirer.prompt(questions).then(answers => {
-  log(cyan('---------------------------------------'));
-  log(
-    green(
-      `You pulled ${answers.card1} ${answers.card2} ${answers.card3} ${answers.card4} ${answers.card5} ${
-        answers.card6
-      } ${answers.card7} ${answers.card8}`
-    )
-  );
-});
+const promptHandler = () => {
+  inquirer.prompt(questions).then(answers => {
+    log(cyan('---------------------------------------'));
+    log(
+      green(
+        `Your reading was: \n \n1) ${answers.card1} \n2) ${answers.card2} \n3) ${answers.card3} \n4) ${answers.card4} \n5) ${answers.card5} \n6) ${answers.card6} \n7) ${answers.card7} \n8) ${answers.card8}`
+      )
+    );
+  });
+}
+
+clear();
+startup();
