@@ -31,6 +31,7 @@ The features of this app are very simple:
 
 - Unit Testing.
 - Integration Testing.
+- As a user, I would like a prettier interface.
 - As a user, I would like to be able to save whether the card is upright or inverse.
 - As a user, I would like to see a traditional description of the card pulled.
 - As a user, I would like to see instructions on how to begin.
