@@ -31,6 +31,7 @@ The features of this app are very simple:
 
 - Unit Testing.
 - Integration Testing.
+- Since the app is currently pretty monolithic, I'd like to break it down into modules.
 - As a user, I would like to see this as a web app.
 - As a user, I would like a prettier text interface.
 - As a user, I would like to be able to save whether the card is upright or inverse.
